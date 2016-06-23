@@ -38,7 +38,7 @@ namespace Absence_Duration_Kata
         [TestCase("2016-01-01", "2016-01-14", 10)]
         public void ParsedBookingWithMonFriShiftReturnsCorrectDuration(DateTime start, DateTime end, int duration)
         {
-            var booking = new DateRange(start, end).ToInputString();
+            var booking = new DateRange(start, end).ToInputString('X');
             var bookingCalculator = new BookingCalculator(booking, MonFriShifts);
             Assert.That(bookingCalculator.Duration, Is.EqualTo(duration));
         }
