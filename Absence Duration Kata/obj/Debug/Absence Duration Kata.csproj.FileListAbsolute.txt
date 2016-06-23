@@ -1,0 +1,7 @@
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\bin\Debug\Absence Duration Kata.dll
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\bin\Debug\Absence Duration Kata.pdb
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\bin\Debug\nunit.framework.dll
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\bin\Debug\nunit.framework.xml
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\obj\Debug\Absence Duration Kata.dll
+c:\users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\obj\Debug\Absence Duration Kata.pdb
+C:\Users\simon.felix\documents\visual studio 2012\Projects\Absence Duration Kata\Absence Duration Kata\obj\Debug\Absence Duration Kata.csprojResolveAssemblyReference.cache
