@@ -33,16 +33,6 @@ namespace Absence_Duration_Kata
             Assert.That(bookingCalculator.Duration, Is.EqualTo(duration));
         }
 
-        [TestCase("2016-01-01", "2016-01-01", 1)]
-        [TestCase("2016-01-01", "2016-01-07", 5)]
-        [TestCase("2016-01-01", "2016-01-14", 10)]
-        public void ParsedBookingWithMonFriShiftReturnsCorrectDuration(DateTime start, DateTime end, int duration)
-        {
-            var booking = new DateRange(start, end).ToDayString();
-            var bookingCalculator = new BookingCalculator(booking, MonFriShifts);
-            Assert.That(bookingCalculator.Duration, Is.EqualTo(duration));
-        }
-
         [TestCase("X", 1)]
         [TestCase("XXXXXXX", 4)]
         [TestCase("XXXXXXXXXXXXXX", 8)]
@@ -52,6 +42,16 @@ namespace Absence_Duration_Kata
         public void BookingWith4On4OffShiftReturnsCorrectDuration(string booking, int duration)
         {
             var bookingCalculator = new BookingCalculator(booking, FourOnFourOffShifts);
+            Assert.That(bookingCalculator.Duration, Is.EqualTo(duration));
+        }
+        
+        [TestCase("2016-01-01", "2016-01-01", 1)]
+        [TestCase("2016-01-01", "2016-01-07", 5)]
+        [TestCase("2016-01-01", "2016-01-14", 10)]
+        public void ParsedBookingWithMonFriShiftReturnsCorrectDuration(DateTime start, DateTime end, int duration)
+        {
+            var booking = new DateRange(start, end).ToDayString();
+            var bookingCalculator = new BookingCalculator(booking, MonFriShifts);
             Assert.That(bookingCalculator.Duration, Is.EqualTo(duration));
         }
     }
