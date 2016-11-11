@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace Absence_Duration_Kata
 {
     [TestFixture]
-    public class Class2Tests
+    public class AbsenceDurationTestsRefactored
     {
         [Test]
         public void ListMondayToFriday()

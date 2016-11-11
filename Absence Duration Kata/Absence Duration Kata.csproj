@@ -48,7 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbsenceDuration.cs" />
-    <Compile Include="AbsenceDuration2.cs" />
+    <Compile Include="AbsenceDurationRefactored.cs" />
+    <Compile Include="AbsenceDurationTeamSolution.cs" />
     <Compile Include="BookingFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
